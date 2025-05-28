@@ -1,0 +1,138 @@
+/* General Container */
+.portfolio-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 50%, #fce7f3 100%);
+  color: #1e293b; /* slate-800 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.portfolio-header {
+  background: linear-gradient(90deg, #4338ca, #7c3aed);
+  color: white;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 6px rgb(67 56 202 / 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.header-title h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.header-title p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.nav-button {
+  background: white;
+  color: #4338ca;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(67, 56, 202, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+  background: #ede9fe;
+  transform: scale(1.05);
+}
+
+/* Section blocks */
+.section-block {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(67, 56, 202, 0.1);
+}
+
+.section-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4338ca;
+  margin-bottom: 1rem;
+}
+
+.section-content p, 
+.section-content ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #334155;
+}
+
+.section-content ul {
+  list-style-position: inside;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skill-item {
+  background: #ede9fe;
+  color: #4338ca;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(67, 56, 202, 0.2);
+  font-size: 0.9rem;
+}
+
+/* Projects */
+.project-card {
+  background: #ede9fe;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 3px 6px rgba(67, 56, 202, 0.1);
+}
+
+.project-card h3 {
+  color: #5b21b6;
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: #4338ca;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #7c3aed;
+}
+
+/* Footer */
+.portfolio-footer {
+  background: linear-gradient(90deg, #4338ca, #7c3aed);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 600;
+  margin-top: 3rem;
+}
