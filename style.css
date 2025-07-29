@@ -1,138 +1,138 @@
-/* General Container */
-.portfolio-container {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 50%, #fce7f3 100%);
-  color: #1e293b; /* slate-800 */
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #1d0f0f;
+  color: #222;
 }
 
-/* Header */
-.portfolio-header {
-  background: linear-gradient(90deg, #4338ca, #7c3aed);
-  color: white;
-  padding: 1.5rem 1rem;
-  box-shadow: 0 4px 6px rgb(67 56 202 / 0.5);
+header {
+  background: linear-gradient(to right, #4b0505, #c22d84);
+  color: rgba(236, 233, 233, 0.951);
+  padding: 20px;
+  text-align: center;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  text-align: center;
+  z-index: 10;
 }
 
-.header-title h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 0.2rem;
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-.header-title p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-/* Navigation buttons */
-.nav-buttons {
+.top-buttons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.nav-button {
-  background: white;
-  color: #4338ca;
+nav button, #showResume {
+  background-color: #20405f;
   border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 9999px;
-  font-weight: 600;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: rgb(230, 221, 221);
+  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(67, 56, 202, 0.3);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s;
 }
 
-.nav-button:hover {
-  background: #ede9fe;
-  transform: scale(1.05);
+nav button:hover, #showResume:hover {
+  background-color: #137feb;
 }
 
-/* Section blocks */
-.section-block {
-  padding: 2rem 1rem;
+section {
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 20px auto;
+  padding: 20px;
   background: white;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(67, 56, 202, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.section-content h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #4338ca;
-  margin-bottom: 1rem;
-}
-
-.section-content p, 
-.section-content ul {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #334155;
-}
-
-.section-content ul {
-  list-style-position: inside;
-}
-
-/* Skills */
-.skills-list {
+.skill-boxes {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1rem;
+  gap: 10px;
+  margin-top: 10px;
+}
+.skill {
+  background: #253e4f;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.skill-item {
-  background: #ede9fe;
-  color: #4338ca;
-  padding: 0.4rem 1rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  box-shadow: 0 2px 5px rgba(67, 56, 202, 0.2);
-  font-size: 0.9rem;
+.project-title {
+  cursor: pointer;
+  color: #27353e;
+  margin-bottom: 5px;
 }
 
-/* Projects */
+.project-desc {
+  display: none;
+  margin-top: 5px;
+}
+
 .project-card {
-  background: #ede9fe;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 0.75rem;
-  box-shadow: 0 3px 6px rgba(67, 56, 202, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #c1c4c8;
+  border-left: 5px solid #007acc;
 }
 
-.project-card h3 {
-  color: #5b21b6;
-  margin-bottom: 0.5rem;
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #222;
+  color: white;
 }
 
-/* Links */
-a {
-  color: #4338ca;
+footer a {
+  color: #4dd2ff;
+  text-decoration: none;
+}
+
+footer a:hover {
   text-decoration: underline;
 }
 
-a:hover {
-  color: #7c3aed;
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
 }
 
-/* Footer */
-.portfolio-footer {
-  background: linear-gradient(90deg, #4338ca, #7c3aed);
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  font-weight: 600;
-  margin-top: 3rem;
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
 }
