@@ -2,97 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Veer Sharma Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veer Sharma - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="portfolio-container">
-    <!-- Header -->
-    <header class="portfolio-header">
-      <div class="header-title">
-        <h1>Veer Sharma</h1>
-        <p>Student Portfolio</p>
-      </div>
-      <nav class="nav-buttons">
-        <button class="nav-button" data-target="about">About</button>
-        <button class="nav-button" data-target="education">Education</button>
+  <header>
+    <h1>Veer Sharma</h1>
+    <div class="top-buttons">
+      <button id="showResume">Show Resume</button>
+      <nav>
         <button class="nav-button" data-target="skills">Skills</button>
+        <button class="nav-button" data-target="certifications">Certifications</button>
         <button class="nav-button" data-target="projects">Projects</button>
-        <button class="nav-button" data-target="certificates">Certificates</button>
-        <button class="nav-button" data-target="contact">Contact</button>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <!-- Sections -->
-    <section id="about" class="section-block">
-      <div class="section-content">
-        <h2>About Me</h2>
-        <p>
-          I am currently pursuing my Bachelor's degree in Computer Application and enjoy exploring new ideas and technology and developing skills. This portfolio showcases my work and progress.
-        </p>
-      </div>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-boxes">
+      <span class="skill">Java</span><span class="skill">C</span><span class="skill">Python</span>
+      <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">SQL</span>
+      <span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">VS Code</span>
+      <span class="skill">NetBeans</span><span class="skill">HackerRank</span>
+      <span class="skill">Lightning App Builder</span><span class="skill">Object Manager</span>
+      <span class="skill">SOQL</span><span class="skill">Apex</span>
+    </div>
+  </section>
 
-    <section id="education" class="section-block">
-      <div class="section-content">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Secondary School</strong> – 2021</li>
-          <li><strong>Senior Secondary</strong> – 2023</li>
-          <li><strong>Bachelor of Computer Application</strong> – 2023–Present</li>
-        </ul>
-      </div>
-    </section>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Salesforce Developer – AU Ignite</li>
+      <li>Data Mining – NPTEL</li>
+      <li>Language Translation System – PRAYOGAM 2023</li>
+      <li>Java (Basic) – HackerRank</li>
+      <li>SQL (Basic) – HackerRank</li>
+    </ul>
+  </section>
 
-    <section id="skills" class="section-block">
-      <div class="section-content">
-        <h2>Skills</h2>
-        <div class="skills-list">
-          <span class="skill-item">HTML</span>
-          <span class="skill-item">CSS</span>
-          <span class="skill-item">JavaScript</span>
-          <span class="skill-item">Java</span>
-          <span class="skill-item">C</span>
-          <span class="skill-item">Python</span>
-        </div>
-      </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3 class="project-title">Project Management App</h3>
+      <p class="project-desc">Utilized Salesforce’s declarative tools like Lightning App Builder, Process Builder, and Object Manager to design custom objects for Projects, Tasks, and Team Members. Created automation flows and layouts to manage deadlines, assignments, and team performance.</p>
+    </div>
+    <div class="project-card">
+      <h3 class="project-title">Simple Banking Application</h3>
+      <p class="project-desc">Built a console-based banking system in Java using OOP principles like inheritance, abstraction, and encapsulation. Implemented features for account creation, deposit, withdrawal, and balance checks in a menu-driven interface.</p>
+    </div>
+    <div class="project-card">
+      <h3 class="project-title">Language Translation System</h3>
+      <p class="project-desc">Developed a web-based application that translates words or phrases into multiple languages and converts them into audio using JavaScript APIs for language detection and speech synthesis.</p>
+    </div>
+  </section>
 
-    <section id="projects" class="section-block">
-      <div class="section-content">
-        <h2>Projects</h2>
-        <div class="project-card">
-          <h3>Language Translation System</h3>
-          <p>A system designed to translate text from one language to another using programming logic and APIs.</p>
-        </div>
-        <div class="project-card">
-          <h3>Amazon Clone</h3>
-          <p>A functional clone of Amazon's UI built with HTML, CSS, and JavaScript showcasing e-commerce features.</p>
-        </div>
-      </div>
-    </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Veer Sharma | <a href="https://github.com/Veer240905" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/veer-sharma-058ab9348" target="_blank">LinkedIn</a></p>
+  </footer>
 
-    <section id="certificates" class="section-block">
-      <div class="section-content">
-        <h2>Certificates & Achievements</h2>
-        <ul>
-          <li>NPTEL Data Mining</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="section-block">
-      <div class="section-content">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:veer@example.com">veer@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/veer-sharma-058ab9348" target="_blank" rel="noopener noreferrer">linkedin.com/in/veer-sharma-058ab9348</a></p>
-      </div>
-    </section>
-
-    <footer class="portfolio-footer">
-      © <span id="year"></span> Veer Sharma
-    </footer>
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <embed src=""assets/Veer_Sharma_Resume.pdf"" type="pdf" width="100%" height="600px" />
+    </div>
   </div>
 
   <script src="script.js"></script>
